@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    #card {
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 3px 4px 25px rgba(99, 98, 98, 0.3);
+      max-width: 90%;
+      background-color: white;
+      display: flex; /* Use Flexbox */
+      flex-direction: column;
+      align-items: center; /* Center children horizontally */
+    }
+
+    #code {
+      width: 200px; /* Keep the width as needed */
+      height: 200px;
+      border-radius: 10px;
+      margin: 10px;
+      margin-bottom: 10px;
+    }
+
+    #title {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      color: black;
+      margin-bottom: 10px;
+      max-width: 200px;
+      margin: 0 auto; /* Center the title horizontally */
+    }
+
+    #text {
+      font-size: 12px;
+      line-height: 1.1;
+      max-width: 180px;
+      color: hsl(220, 15%, 55%);
+      font-weight: 400;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    #footer {
+      font-size: 11px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #footer a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media (min-width: 768px) {
+      /* Desktop styles */
+      #card {
+        max-width: 600px;
+        margin: 0; /* Remove margin to keep your desktop version */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="card" class="text-center"> <!-- Add the text-center class here -->
+    <img src="\images\image-qr-code.png" alt="QR-CODE" id="code">
+    <div>
+      <div id="title">
+        Improve your front-end skills by building projects 
+      </div>
+      <div id="text">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/amdjadarc" target="_blank">Amdjad.A</a>.
+  </div>
+</body>
+</html>
